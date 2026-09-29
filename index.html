@@ -6,6 +6,17 @@
     <title>Minh-Hoang Le</title>
     <meta name="author" content="Minh-Hoang Le">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Minh-Hoang Le: undergraduate researcher at University of Science - VNUHCM working on visual forensics and multimedia retrieval.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Minh-Hoang Le">
+    <meta property="og:description"
+        content="Visual forensics, deepfake detection and multimedia retrieval at University of Science - VNUHCM (SELAB).">
+    <meta property="og:url" content="https://leminhhoang04.github.io/">
+    <meta property="og:image" content="https://leminhhoang04.github.io/images/og-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
@@ -36,8 +47,7 @@
                                             Prof. Minh-Triet Tran</a> and <a
                                             href="https://scholar.google.com/citations?hl=en&user=wKjfvlsAAAAJ">MSc.
                                             Trong-Le Do</a>. My recent work
-                                        primarily revolves around robust deepfake
-                                        detection, image forensics, and vision-language models.
+                                        primarily revolves around visual forensics and multimedia retrieval.
                                         Before diving into AI research, I spent years in competitive programming and
                                         proudly represented Vietnam at <a
                                             href="https://cphof.org/profile/codeforces:Monarchuwu">the ICPC
@@ -68,11 +78,13 @@
                                 <td style="padding:16px;width:100%;vertical-align:middle">
                                     <h2>Research</h2>
                                     <p>
-                                        I'm interested in computer vision, deep learning, and image forensics. Most of
+                                        I am interested in computer vision, deep learning, and image forensics. Most of
                                         my research is about developing robust detection systems to identify
                                         AI-generated manipulations, localized image forgeries, and deepfakes under
-                                        extreme conditions and cross-domain settings. I also explore vision-language
-                                        models for tasks like event-aware image captioning.
+                                        extreme conditions and cross-domain settings. I also work on multimedia retrieval, from clip-based video event search to
+                                        event-aware image captioning with vision-language models.
+                                        <br>
+                                        *&nbsp;denotes equal contribution. Hover over a thumbnail to see it in action.
                                     </p>
                                 </td>
                             </tr>
@@ -81,102 +93,234 @@
                     <table
                         style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
-                            <p>Publications: Coming soon</p>
+                            <!-- publications: begin -->
 
-                            <!--
-                            <tr onmouseout="zipmap_stop()" onmouseover="zipmap_start()">
+                            <tr>
+                                <td colspan="2" style="padding:24px 16px 0px 16px;vertical-align:middle">
+                                    <h2 style="font-size:18px">Visual Forensics</h2>
+                                </td>
+                            </tr>
+
+                            <tr class="pub">
                                 <td style="padding:16px;width:20%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='zipmap_image'><video width=100% height=100% muted autoplay
-                                                loop>
-                                                <source src="images/zipmap.mp4" type="video/mp4">
+                                        <div class="two"><video width=100% height=100% muted loop playsinline preload="auto">
+                                                <source src="images/lephan2026robust.mp4" type="video/mp4">
                                                 Your browser does not support the video tag.
                                             </video></div>
-                                        <img src='images/zipmap.jpg' width="160">
+                                        <img src="images/lephan2026robust.jpg" width=100% alt="lephan2026robust">
                                     </div>
-                                    <script type="text/javascript">
-                                        function zipmap_start() {
-                                            document.getElementById('zipmap_image').style.opacity = "1";
-                                        }
-
-                                        function zipmap_stop() {
-                                            document.getElementById('zipmap_image').style.opacity = "0";
-                                        }
-                                        zipmap_stop()
-                                    </script>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="https://haian-jin.github.io/ZipMap/">
-                                        <span class="papertitle">ZipMap: Linear-Time Stateful 3D Reconstruction via
-                                            Test-Time Training</span>
-                                    </a>
-                                    <br>
-                                    <a href="https://haian-jin.github.io/">Haian Jin</a>,
-                                    <a href="https://rundiwu.github.io/">Rundi Wu</a>,
-                                    <a href="https://tianyuanzhang.com/">Tianyuan Zhang</a>,
-                                    <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>, <br>
-                                    <strong>Jonathan T. Barron</strong>,
-                                    <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>,
-                                    <a href="https://holynski.org/">Aleksander Hołyński</a>
-                                    <br>
-                                    <em>CVPR</em>, 2026
-                                    <br>
-                                    <a href="https://haian-jin.github.io/ZipMap/">project page</a> /
-                                    <a href="https://arxiv.org/abs/2603.04385">arXiv</a> /
-                                    <a href="https://github.com/Haian-Jin/ZipMap">code</a>
-                                    <p></p>
-                                    <p>
-                                        Test-time training lets you quickly compress an entire image collection into a
-                                        compact model and thereby achieve linear-time 3D reconstruction.
-                                    </p>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="radmesh_stop()" onmouseover="radmesh_start()" bgcolor="#ffffd0">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <div class="two" id='radmesh_image'>
-                                            <img src='images/radmesh_after.jpg' width=100%>
-                                        </div>
-                                        <img src='images/radmesh_before.jpg' width=100%>
-                                    </div>
-                                    <script type="text/javascript">
-                                        function radmesh_start() {
-                                            document.getElementById('radmesh_image').style.opacity = "1";
-                                        }
-
-                                        function radmesh_stop() {
-                                            document.getElementById('radmesh_image').style.opacity = "0";
-                                        }
-                                        radmesh_stop()
-                                    </script>
                                 </td>
                                 <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <a href="https://half-potato.gitlab.io/rm/">
-                                        <span class="papertitle">Radiance Meshes for Volumetric Reconstruction</span>
+                                    <a href="https://openaccess.thecvf.com/content/CVPR2026W/NTIRE/html/Le-Phan_Robust_Deepfake_Detection_Mitigating_Spatial_Attention_Drift_via_Calibrated_Complementary_CVPRW_2026_paper.html">
+                                        <span class="papertitle">Robust Deepfake Detection: Mitigating Spatial Attention Drift via Calibrated Complementary Ensembles</span>
                                     </a>
                                     <br>
-                                    <a href="https://half-potato.gitlab.io/">Alexander Mai</a>,
-                                    <a href="https://github.com/Shmaug">Trevor Hedstrom</a>,
-                                    <a href="https://grgkopanas.github.io/">George Kopanas</a>, <br>
-                                    <a href="https://mediatech.aalto.fi/~janne/index.php">Janne Kontkanen</a>,
-                                    <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-                                    <strong>Jonathan T. Barron</strong>
+                                    Minh-Khoa Le-Phan*, <strong>Minh-Hoang Le</strong>*, <a href="https://scholar.google.com/citations?hl=en&user=wKjfvlsAAAAJ">Trong-Le Do</a>, <a href="https://scholar.google.com/citations?hl=en&user=lt2ATkkAAAAJ">Minh-Triet Tran</a>
                                     <br>
-                                    <em>CVPR</em>, 2026 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+                                    <em>CVPR Workshops (NTIRE)</em>, 2026&nbsp;<font color=#FF8080><strong>(4th Place, NTIRE 2026 Robust Deepfake Detection Challenge)</strong></font>
                                     <br>
-                                    <a href="https://half-potato.gitlab.io/rm/">project page</a>
-                                    /
-                                    <a href="https://arxiv.org/abs/2512.04076">arXiv</a>
+                                    <a href="https://arxiv.org/abs/2604.25889">arXiv</a> /
+                                    <a href="https://github.com/khoalephanminh/ntire26-deepfake-challenge">github</a>
                                     <p></p>
                                     <p>
-                                        Parameterizing a scene with a Delaunay tetrahedralization and a neural field
-                                        yields a scene representation that is accurate, fast to render, easy to edit,
-                                        and backwards-compatible.
+                                        Extreme degradations during training erase texture shortcuts, so global, facial, and semantic streams learn degradation-invariant cues.
                                     </p>
                                 </td>
                             </tr>
-                            -->
+
+                            <tr class="pub">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two">
+                                            <img src="images/lephan2025edger_after.jpg" width=100% alt="">
+                                        </div>
+                                        <img src="images/lephan2025edger_before.jpg" width=100% alt="lephan2025edger">
+                                    </div>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://doi.org/10.1007/978-981-92-2584-2_18">
+                                        <span class="papertitle">EDGER: EDge-Guided with HEatmap Refinement for Generalizable Image Forgery Localization</span>
+                                    </a>
+                                    <br>
+                                    Minh-Khoa Le-Phan*, <strong>Minh-Hoang Le</strong>*, <a href="https://scholar.google.com/citations?hl=en&user=lt2ATkkAAAAJ">Minh-Triet Tran</a>, <a href="https://scholar.google.com/citations?hl=en&user=wKjfvlsAAAAJ">Trong-Le Do</a>
+                                    <br>
+                                    <em>SoICT</em>, 2025
+                                    <br>
+                                    <a href="https://arxiv.org/abs/2605.12002">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        A resolution-agnostic, patch-based design pinpoints manipulation boundaries from frequency edges and detects fully synthetic patches.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr class="pub">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two"><video width=100% height=100% muted loop playsinline preload="auto">
+                                                <source src="images/le2025patch.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video></div>
+                                        <img src="images/le2025patch.jpg" width=100% alt="le2025patch">
+                                    </div>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://doi.org/10.1117/12.3096373">
+                                        <span class="papertitle">Patch-based Localized Artifact Enhancement for Deepfake Detection</span>
+                                    </a>
+                                    <br>
+                                    <strong>Minh-Hoang Le</strong>*, Minh-Khoa Le-Phan*, <a href="https://scholar.google.com/citations?hl=en&user=lt2ATkkAAAAJ">Minh-Triet Tran</a>, <a href="https://scholar.google.com/citations?hl=en&user=wKjfvlsAAAAJ">Trong-Le Do</a>
+                                    <br>
+                                    <em>ICMV</em>, 2025
+                                    <p></p>
+                                    <p>
+                                        Five overlapping facial patches complement a frozen full-face blending detector, improving cross-dataset generalization.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr class="pub">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two"><video width=100% height=100% muted loop playsinline preload="auto">
+                                                <source src="images/lephan2025hybrid.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video></div>
+                                        <img src="images/lephan2025hybrid.jpg" width=100% alt="lephan2025hybrid">
+                                    </div>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://doi.org/10.1145/3709020.3734833">
+                                        <span class="papertitle">A Hybrid Model for Generalizable Deepfake Detection via Blending, Semantic, and General Artifacts</span>
+                                    </a>
+                                    <br>
+                                    Minh-Khoa Le-Phan*, <strong>Minh-Hoang Le</strong>*, <a href="https://scholar.google.com/citations?hl=en&user=lt2ATkkAAAAJ">Minh-Triet Tran</a>, <a href="https://scholar.google.com/citations?hl=en&user=wKjfvlsAAAAJ">Trong-Le Do</a>
+                                    <br>
+                                    <em>SCID Workshop</em>, 2025
+                                    <p></p>
+                                    <p>
+                                        Three complementary branches, for blending traces, CLIP semantics, and general artifacts, are fused so the detector generalizes across datasets.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" style="padding:24px 16px 0px 16px;vertical-align:middle">
+                                    <h2 style="font-size:18px">Multimedia Retrieval</h2>
+                                </td>
+                            </tr>
+
+                            <tr class="pub">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two"><video width=100% height=100% muted loop playsinline preload="auto">
+                                                <source src="images/le2025ucese.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video></div>
+                                        <img src="images/le2025ucese.jpg" width=100% alt="le2025ucese">
+                                    </div>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://doi.org/10.1007/978-981-92-2590-3_40">
+                                        <span class="papertitle">U-CESE: Unified Clip-Based Event Search Engine for AI Challenge HCMC 2025</span>
+                                    </a>
+                                    <br>
+                                    Duc-Nhuan Le*, Hoang-Phuc Nguyen*, Thanh-Duy Lam*, Minh-Nhut Dang*, <strong>Minh-Hoang Le</strong>*
+                                    <br>
+                                    <em>SoICT</em>, 2025
+                                    <br>
+                                    <a href="https://arxiv.org/abs/2605.23274">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        Recurrent memory enables dense shot-level captioning, while CPU-only DAKE nearly matches a compute-heavy GPU shot detector.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr class="pub">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two"><video width=100% height=100% muted loop playsinline preload="auto">
+                                                <source src="images/nguyen2025enric.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video></div>
+                                        <img src="images/nguyen2025enric.jpg" width=100% alt="nguyen2025enric">
+                                    </div>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://doi.org/10.1145/3746027.3762090">
+                                        <span class="papertitle">ENRIC: EveNt-AwaRe Captioning with Image Retrieval via UnCertainty-Guided Re-ranking and Semantic Ensemble Reasoning</span>
+                                    </a>
+                                    <br>
+                                    Nam-Quan Nguyen*, <strong>Minh-Hoang Le</strong>*, Vinh-Toan Vong*, <a href="https://scholar.google.com/citations?hl=en&user=lt2ATkkAAAAJ">Minh-Triet Tran</a>
+                                    <br>
+                                    <em>ACM Multimedia (Grand Challenge)</em>, 2025&nbsp;<font color=#FF8080><strong>(1st Place, EVENTA Challenge Track 1)</strong></font>
+                                    <br>
+                                    <a href="https://github.com/NamQuanProject/EVENTA25-ENRIC">github</a>
+                                    <p></p>
+                                    <p>
+                                        Chain-of-thought prompting fuses captions, the article summary, QA pairs, and named entities into the final caption.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr class="pub">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two"><video width=100% height=100% muted loop playsinline preload="auto">
+                                                <source src="images/le2024cese.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video></div>
+                                        <img src="images/le2024cese.jpg" width=100% alt="le2024cese">
+                                    </div>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://doi.org/10.1007/978-981-96-4291-5_21">
+                                        <span class="papertitle">CESE: A Clip-Based Event Search Engine for AI Challenge HCMC 2024</span>
+                                    </a>
+                                    <br>
+                                    Duc-Nhuan Le*, Hoang-Phuc Nguyen*, Thanh-Duy Lam*, Minh-Nhut Dang*, <strong>Minh-Hoang Le</strong>*
+                                    <br>
+                                    <em>SoICT</em>, 2024
+                                    <p></p>
+                                    <p>
+                                        Matching multi-scene queries against whole clips rather than single frames retrieves events that unfold across several shots.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" style="padding:24px 16px 0px 16px;vertical-align:middle">
+                                    <h2 style="font-size:18px">Others</h2>
+                                </td>
+                            </tr>
+
+                            <tr class="pub">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two">
+                                            <img src="images/dang2025parallel_after.jpg" width=100% alt="">
+                                        </div>
+                                        <img src="images/dang2025parallel_before.jpg" width=100% alt="dang2025parallel">
+                                    </div>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <a href="https://doi.org/10.1007/978-3-031-98164-7_15">
+                                        <span class="papertitle">Parallel Corpus Construction for Chinese and Vietnamese in Historical Texts</span>
+                                    </a>
+                                    <br>
+                                    Minh-Nhut Dang*, Thanh-Hau Cao*, Thanh-Duy Lam*, <strong>Minh-Hoang Le</strong>*, Duc-Nhuan Le*, Si-Dien Dinh
+                                    <br>
+                                    <em>ICCIES</em>, 2025
+                                    <p></p>
+                                    <p>
+                                        Sino-Vietnamese pronunciation matching aligns a Nguyễn-dynasty chronicle in Chữ Hán with its translation, without multilingual models.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- publications: end -->
 
                         </tbody>
                     </table>
@@ -200,6 +344,26 @@
                 </td>
             </tr>
     </table>
+    <script type="text/javascript">
+        // Publication thumbnails: fade in the .two layer on hover (see stylesheet.css) and
+        // restart its video from the first frame, so animations always play from the beginning.
+        // On touch screens, tapping a thumbnail toggles it instead.
+        document.querySelectorAll('tr.pub').forEach(function (row) {
+            var video = row.querySelector('.two video');
+            function start() {
+                if (video) { video.currentTime = 0; video.play().catch(function () {}); }
+            }
+            function stop() {
+                if (video) { video.pause(); }
+            }
+            row.addEventListener('mouseenter', start);
+            row.addEventListener('mouseleave', stop);
+            row.querySelector('.one').addEventListener('touchend', function (e) {
+                e.preventDefault();
+                row.classList.toggle('active') ? start() : stop();
+            });
+        });
+    </script>
 </body>
 
 </html>

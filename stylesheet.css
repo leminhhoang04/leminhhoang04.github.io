@@ -124,6 +124,35 @@ h2 {
   -webkit-transition: opacity .2s ease-in-out;
 }
 
+.one img,
+.one video {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* publication thumbnails: the .two layer fades in while the row is hovered */
+tr.pub .two {
+  opacity: 0;
+}
+
+tr.pub:hover .two,
+tr.pub.active .two {
+  opacity: 1;
+}
+
+/* smaller thumbnails on phones so the paper text keeps enough room */
+@media (max-width: 600px) {
+  .one,
+  .two,
+  .one img,
+  .one video {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .fade {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
